@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Win a Cruise!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="outerContainer">
+
+    <form method="post" action="cruise_form_handler.php">
+
+        <label for="firstName" class="form-label">First Name:</label>
+        <input type="text" name="firstName" id="firstName" class="form-textbox">
+        <br>
+
+        <label for="lastName" class="form-label">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" class="form-textbox">
+        <br>
+
+        <label for="email" class="form-label">E-mail:</label>
+        <input type="text" name="email" id="email" class="form-textbox">
+        <br>
+
+        <label for="city" class="form-label">City:</label>
+        <input type="text" name="city" id="city" class="form-textbox">
+        <br>
+
+        <label for="state" class="form-label" class="form-dropdown">State:</label>
+        <select name="state" id="state" class="form-dropdown">
+            <option value="">Please select...</option>
+            <option value="CT">Connecticut</option>
+            <option value="NY">New York</option>
+            <option value="NJ">New Jersey</option>
+            <option value="MA">Massachusetts</option>
+            <option value="RI">Rhode Island</option>
+        </select>
+        <br>
+
+        <label for="preferredDestination" class="form-label">Preferred Destination:</label>
+        <select name="preferredDestination" id="preferredDestination" class="form-dropdown">
+            <option value="">Please select...</option>
+            <option value="Bermuda">Bermuda</option>
+            <option value="Bahamas">Bahamas</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Aruba">Aruba</option>
+            <option value="Cozumel">Cozumel</option>
+        </select>
+        <br>
+
+        <div style="text-align: center">
+            <input id="submitButton" type="submit" value="Submit your entry">
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>
