@@ -6,7 +6,7 @@
     // If the session exists (which means the user is logged in), send the over to the list entries
     // (dashboard in the future)
     if (isset($_SESSION['adminuser'])) {
-        header('location: list_entries.php');
+        header('location: dashboard.php');
     }
 ?>
 <html>
@@ -22,9 +22,9 @@
             height: 100vh;
         }
         #login .container #login-row #login-column #login-box {
-            margin-top: 120px;
+            margin-top: 60px;
             max-width: 600px;
-            height: 320px;
+            height: 420px;
             border: 1px solid #9C9C9C;
             background-color: #EAEAEA;
         }

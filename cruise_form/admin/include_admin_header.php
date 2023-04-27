@@ -1,7 +1,7 @@
 <?php
 // Admin Header with button
 
-    $username = $_SESSION['adminuser'];
+    //$username = $_SESSION['adminuser'];
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -13,10 +13,10 @@
       data-mdb-target="#navbarText"
       aria-controls="navbarText"
       aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+      aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
@@ -25,10 +25,17 @@
         <li class="nav-item">
           <a class="nav-link" href="#"></a>
         </li>
+        
         <li class="nav-item">
-          <a class="nav-link">Logged in as <?=$username?>   </a>
+          <a class="nav-link">Logged in as <?=$adminUser->get_fullName()?>   </a>
         </li>
       </ul>
+
+      <span class="navbar-text">
+        <a href="dashboard.php">Dashboard </a>  
+      </span>
+      &nbsp;
+      &nbsp;
       <span class="navbar-text">
         <a href="admin_logout.php">LOGOUT</a>  
       </span>
