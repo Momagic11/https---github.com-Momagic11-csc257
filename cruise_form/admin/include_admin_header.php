@@ -1,8 +1,3 @@
-<?php
-// Admin Header with button
-
-    //$username = $_SESSION['adminuser'];
-?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">ADMIN SECTION</a>
@@ -27,12 +22,21 @@
         </li>
         
         <li class="nav-item">
-          <a class="nav-link">Logged in as <?=$adminUser->get_fullName()?>   </a>
+          <a class="nav-link">Logged in as <?=$adminUser->get_fullName()?></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <?php if ($currentPage == 'list_entries') { echo 'active'; } ?>" href="list_entries.php">List Entries</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <?php if ($currentPage == 'list_cruise_lines') { echo 'active'; } ?>" href="list_cruise_lines.php">List Cruise Lines</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link <?php if ($currentPage == 'list_destinations') { echo 'active'; } ?>" href="list_destinations.php">List Destinations</a>
         </li>
       </ul>
 
       <span class="navbar-text">
-        <a href="dashboard.php">Dashboard </a>  
+        <a href="dashboard.php">Dashboard</a>  
       </span>
       &nbsp;
       &nbsp;

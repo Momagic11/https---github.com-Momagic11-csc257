@@ -3,6 +3,8 @@ require "include_admin_session.php";
 
 require_once "../utils/data_layer.php";
 
+$currentPage = "list_entries";
+
 $sql = "SELECT 
 r.registration_id, r.datetime, r.first_name, r.last_name, r.email, r.address, r.address2,
 r.city, r.zip, s.state_name, d.destination_name, c.cruiseline_name
