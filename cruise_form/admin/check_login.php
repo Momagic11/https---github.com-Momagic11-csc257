@@ -7,6 +7,10 @@ require "user.class.php";
 // If the request is POST -- meaning that a form posted data to this page
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
+    ini_set('session.gc_maxlifetime', 3600);
+    session_set_cookie_params(3600);
+
+
     // Start the PHP session
     session_start();
 

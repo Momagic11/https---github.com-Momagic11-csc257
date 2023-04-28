@@ -3,10 +3,10 @@
 
     session_start(); // Starts session -- grabs current sessions or creates new one
 
-    // If the session exists (which means the user is logged in), send the over to the list entries
+    // If the session exists (which means the user is logged in), send the over to the index page
     // (dashboard in the future)
     if (isset($_SESSION['adminuser'])) {
-        header('location: dashboard.php');
+        header('location: index.php');
     }
 ?>
 <html>
